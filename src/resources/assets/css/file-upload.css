@@ -1,0 +1,27 @@
+.card-head {
+  position: relative;
+}
+
+.card-head .cancel_img_remove_container {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: absolute;
+  color: #fff;
+  font-size: 5rem;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.card-head .cancel_img_remove_container i {
+  opacity: 0.5;
+}
+
+.card-body {
+  padding: 0.8rem;
+}
+
