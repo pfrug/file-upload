@@ -11,11 +11,14 @@ class FileUploadServiceProvider extends ServiceProvider
         $this->loadTranslations();
         $this->loadViews();
 
-        $this->publishes([
-            __DIR__.'/resources/assets/css' => public_path('vendor/fileupload/css'),
-            __DIR__.'/resources/assets/js' => public_path('vendor/fileupload/js'),
-            __DIR__.'/resources/assets/img' => public_path('vendor/fileupload/img'),
-        ], 'fileupload-assets');
+        $this->publishes(
+            [
+                __DIR__ . '/resources/assets/css' => public_path('vendor/fileupload/css'),
+                __DIR__ . '/resources/assets/js' => public_path('vendor/fileupload/js'),
+                __DIR__ . '/resources/assets/img' => public_path('vendor/fileupload/img'),
+            ],
+            'fileupload-assets'
+        );
     }
 
     private function loadTranslations(): void

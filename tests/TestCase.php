@@ -2,9 +2,8 @@
 
 namespace Pfrug\FileUpload\Tests;
 
-class TestCase extends \PHPUnit\Framework\TestCase;
+class TestCase extends \Orchestra\Testbench\TestCase
 {
-
     /**
      * @test
      */
@@ -12,5 +11,4 @@ class TestCase extends \PHPUnit\Framework\TestCase;
     {
         $this->assertTrue(true);
     }
-
 }
